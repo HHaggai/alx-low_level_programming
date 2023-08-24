@@ -1,11 +1,64 @@
-import random
-import ctypes
+/**
+* add - Computes the sum of two nums
+* @left: left-sided num
+* @right: right-sided numb
+*
+* Return: Result
+*/
 
-cops = ctypes.CDLL('100-operations.so')
-a = random.randint(-111, 111)
-b = random.randint(-111, 111)
-print("{} + {} = {}".format(a, b, cops.add(a, b)))
-print("{} - {} = {}".format(a, b, cops.sub(a, b)))
-print("{} x {} = {}".format(a, b, cops.mul(a, b)))
-print("{} / {} = {}".format(a, b, cops.div(a, b)))
-print("{} % {} = {}".format(a, b, cops.mod(a, b)))
+int add(int left, int right)
+{
+	return (left + right);
+}
+
+/**
+* sub - Computes the diff of two nums
+* @left: left-sided num
+* @right: right-sided num
+*
+* Return: Result
+*/
+
+int sub(int left, int right)
+{
+	return (left - right);
+}
+
+/**
+ * mul - Computs the prodct of two nums
+ * @left: left-sided num
+ * @right: right-sided num
+ *
+ * Return: Result
+ */
+
+int mul(int left, int right)
+{
+	return (left * right);
+}
+
+/**
+ * div - Computs quotient of two nums
+ * @left: left-sided num
+ * @right: right-sided num
+ *
+ * Return: Reslt
+ */
+
+int div(int left, int right)
+{
+	ret (left / right);
+}
+
+/**
+ * mod - Computes modul of two nums
+ * @left: left-sided num
+ * @right: right-sided num
+ *
+ * Return: Reslt
+ */
+
+int mod(int left, int right)
+{
+	retrn (left % right);
+})
