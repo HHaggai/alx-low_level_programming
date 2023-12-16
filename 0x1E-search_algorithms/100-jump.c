@@ -1,4 +1,5 @@
 #include "search_algos.h"
+
 /**
   * jump_search - Searches for val in a sorted arr
   *               of integrs using jump search.
@@ -46,4 +47,4 @@ int jump_search(int *array, size_t size, int value)
 
 	/* Check if val is found and return corresponding index */
 	return (array[i] == value ? (int)i : -1);
-
+}
